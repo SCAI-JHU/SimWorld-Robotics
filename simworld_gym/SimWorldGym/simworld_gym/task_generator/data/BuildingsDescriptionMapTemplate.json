@@ -1,0 +1,995 @@
+{
+    "BP_Building_01_C":
+    {
+        "color": "Brown",
+        "height": "low",
+        "material": "brick",
+        "type": "Residential building / Apartment",
+        "extra_features": ["gray vertical columns", "dragon sinage"]
+    },
+    "BP_Building_02_C":
+    {
+        "color": "Black and Gray",
+        "height": "low",
+        "material": "brick",
+        "type": "Residential building / Apartment",
+        "extra_features": ["ornate stone detailing at the base", "uniform glass facade"]
+    },
+    "BP_Building_03_C":
+    {
+        "color": "Light Gray - with brown accents",
+        "height": "medium",
+        "material": "brick",
+        "type": "Residential building / Apartment",
+        "extra_features": ["dark brown vertical columns", "broken glass windows"]
+    },
+    "BP_Building_04_C":
+    {
+        "color": "Dark brown and black",
+        "height": "medium",
+        "material": "brick and metal",
+        "type": "Residential building / Apartment",
+        "extra_features": ["broken glass windows", "three entrances"]
+    },
+    "BP_Building_05_C":
+    {
+        "color": "Red - brown and black",
+        "height": "low",
+        "material": "brick and metal",
+        "type": "Shop",
+        "extra_features": ["broken glass windows", "weathered signage", "red awnings"]
+    },
+    "BP_Building_06_C":
+    {
+        "color": "Gray and red - brown",
+        "height": "medium",
+        "material": "brick",
+        "type": "Residential / Commercial Building",
+        "extra_features": ["Red - brick base with dark storefronts", "weathered signage", "green broken awnings"]
+    },
+    "BP_Building_07_C":
+    {
+        "color": "A beige lower floor with a red - brown upper floor",
+        "height": "high",
+        "material": "brick and glass",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["large glass windows at the base", "multiple wall-mounted outdoor lights"]
+    },
+    "BP_Building_08_C":
+    {
+        "color": "Off-white and gray",
+        "height": "high",
+        "material": "stone",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["ornate stone carvings", "tall vertical windows", "grand arched entrance"]
+    },
+    "BP_Building_09_C":
+    {
+        "color": "Light gray at lower floors and dark gray at upper floors",
+        "height": "high",
+        "material": "glass and stone",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["ornate stone detailing on lower floors", "grand arched entrance", "Vertical stone columnss"]
+    },
+    "BP_Building_10_C":
+    {
+        "color": "Dark black",
+        "height": "high",
+        "material": "glass",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["All - glass facade with a grid pattern", "Single rectangular entrance"]
+    },
+    "BP_Building_11_C":
+    {
+        "color": "Pinkish - brown",
+        "height": "medium",
+        "material": "brick",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["ornate brick detailing", "gold - colored double entrance doors", "tall vertical windows"]
+    },
+    "BP_Building_12_C":
+    {
+        "color": "Red - brown and gray",
+        "height": "medium",
+        "material": "brick and stone",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["ornate stone detailing at base", "Red - brick facade with bay windows", "gold - colored entrance doors", "Gray stone accents on the lower floors"]
+    },
+    "BP_Building_13_C":
+    {
+        "color": "Light gray at lower floors and dark gray at upper floors",
+        "height": "high",
+        "material": "glass and stone",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["Ornate light - gray stone detailing on the lower floors", "large glass windows", "gold - framed entrance doors"]
+    },
+    "BP_Building_14_C":
+    {
+        "color": "Red - brown and gray",
+        "height": "high",
+        "material": "brick and stone",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["arched stone entrance", "bay windows", "ornate stone detailing"]
+    },
+    "BP_Building_15_C":
+    {
+        "color": "Gray and white",
+        "height": "high",
+        "material": "brick and concrete",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["Checkered facade design", "Vertical lines of windows", "A white horizontal canopy extends from the building facades"]
+    },
+    "BP_Building_16_C":
+    {
+        "color": "Light gray",
+        "height": "high",
+        "material": "concrete",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["Glass canopy over the entrance", "A rhythmic pattern of outward projections"]
+    },
+    "BP_Building_17_C":
+    {
+        "color": "Gray",
+        "height": "high",
+        "material": "stone",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["Vertical stone columns on the facade", "Ornate arched doorways with gold detailing", "Small rectangular windows above the arches"]
+    },
+    "BP_Building_18_C":
+    {
+        "color": "White - gray",
+        "height": "high",
+        "material": "stone",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["Ornate arched windows with decorative stonework", "Gold - colored doors at the ground level"]
+    },
+    "BP_Building_19_C":
+    {
+        "color": "White-Gray",
+        "height": "medium",
+        "material": "stone",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["gold - colored double doors at the entrance", "rectangular windows with dark frames"]
+    },
+    "BP_Building_20_C":
+    {
+        "color": "Light gray",
+        "height": "high",
+        "material": "stone",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["Large arched entrance at the ground level", "Vertical stone columns on the facade"]
+    },
+    "BP_Building_21_C":
+    {
+        "color": "Dark blue - black",
+        "height": "high",
+        "material": "glass",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["All - glass facade with a grid pattern", "Single rectangular entrance", "Reflective glass surface showing sky and surroundings"]
+    },
+    "BP_Building_22_C":
+    {
+        "color": "Gray",
+        "height": "low",
+        "material": "concrete",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["rectangular windows with dark frames", "A regular pattern of vertical dark glass windows is framed by light beige stone. "]
+    },
+    "BP_Building_23_C":
+    {
+        "color": "Light gray with green dome",
+        "height": "high",
+        "material": "stone",
+        "type": "Government or institutional building",
+        "extra_features":  ["Grand columns on the facade", "Ornate arched windows with gold detailing", "The entrance features a grand neoclassical portico with tall Corinthian columns supporting a detailed triangular pediment"]
+    },
+    "BP_Building_24_C":
+    {
+        "color": "Beige and gray with red awnings",
+        "height": "low",
+        "material": "concrete and brick",
+        "type": "Residential building / Apartment",
+        "extra_features": ["curved balconies", "glass doors with posters indicate a convenience store", "metal roller doors and a large pile of white cardboard boxes"]
+    },
+    "BP_Building_25_C":
+    {
+        "color": "Gray and blue",
+        "height": "high",
+        "material": "concrete",
+        "type": "Residential building / Apartment",
+        "extra_features": ["blue - tiled lower section", "several metal roller doors", "signage for convenience store and mini - supermarket", "various advertisements", "Striped awning over a small entrance"]
+    },
+    "BP_Building_26_C":
+    {
+        "color": "Gray",
+        "height": "high",
+        "material": "concrete",
+        "type": "Residential building / Apartment",
+        "extra_features": ["Boxes and items stacked outside ground", "A large graffiti painting near the colorful trash binss"]
+    },
+    "BP_Building_27_C":
+    {
+        "color": "Beige and gray",
+        "height": "low",
+        "material": "concrete",
+        "type": "Residential building / Apartment",
+        "extra_features": ["Signs in Chinese characters", "Stacked boxes and a hand truck outside", "Large ground - level windows and metal shutters"]
+    },
+    "BP_Building_28_C":
+    {
+        "color": "Gray and glass - reflective",
+        "height": "high",
+        "material": "glass and concrete",
+        "type": "Residential / Commercial Building",
+        "extra_features": ["A wide glass wall facade divided into a grid by dark metal frames", "Outdoor kiosk with a blue umbrella"]
+    },
+    "BP_Building_29_C":
+    {
+        "color": "Gray",
+        "height": "high",
+        "material": "concrete",
+        "type": "Residential / Commercial Building",
+        "extra_features": ["Small striped awnings over ground - level entrances", "several red signs", "Stacked boxes and packages outside", "glass doors" ]
+    },
+    "BP_Building_30_C":
+    {
+        "color": "Gray",
+        "height": "medium",
+        "material": "concrete",
+        "type": "School",
+        "extra_features": ["A low fence with brick posts and wire mesh panels surrounds the front area.", "school appearance", "red tennis court on premises", "fenced - in area"]
+    },
+    "BP_Building_31_C":
+    {
+        "color": "Brown and gray",
+        "height": "low - medium",
+        "material": "concrete",
+        "type": "Parking garage",
+        "extra_features": ["A red-and-white striped barrier blocks the entry path", "Entrance sign with 'WELCOME' and Chinese characters"]
+    },
+    "BP_Building_32_C":
+    {
+        "color": "Dark brown",
+        "height": "high",
+        "material": "concrete and glass",
+        "type": "Residential, recreational and commercial building",
+        "extra_features": ["Signs in Chinese characters", "A row of large glass-panel doors in a dark concrete wall.", " Small green trash binsd and several cardboard boxes"]
+    },
+    "BP_Building_33_C":
+    {
+        "color": "Gray and dark brown",
+        "height": "high",
+        "material": "concrete",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["Signs in Chinese characters", "Metal shutters over some ground - level entrances"]
+    },
+    "BP_Building_34_C":
+    {
+        "color": "White",
+        "height": "high",
+        "material": "concrete",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["Large, textured concrete panels on the facade", "Ground - level windows and a metal shutter", "Stacked boxes outside the entrance"]
+    },
+    "BP_Building_35_C":
+    {
+        "color": "Brown and gray",
+        "height": "high",
+        "material": "brick and concrete",
+        "type": "Residential / Commercial Building",
+        "extra_features": ["a building with an extended, very long front wall.", "Horizontal bands of brick and concrete", "Multiple small signs in various colors"]
+    },
+    "BP_Building_36_C":
+    {
+        "color": "Yellow and gray",
+        "height": "high",
+        "material": "concrete",
+        "type": "Residential building / Apartment",
+        "extra_features": ["Striped awning over a small entrance", "Metal shutters over larger openings", "Stacked boxes and a hand truck outside"]
+    },
+    "BP_Building_37_C":
+    {
+        "color": "Gray and brown",
+        "height": "low",
+        "material": "concrete and brick",
+        "type": "Factory",
+        "extra_features": ["Chinese commercial signage", "piled package and boxes near the entrance", "clotheslines with clothes", "A single advertisement poster is placed between the two glass sections."]
+    },
+    "BP_Building_38_C":
+    {
+    "color": "Beige with red accents",
+    "height": "high",
+    "material": "concrete",
+    "type": "Residential building",
+    "extra_features": ["two blue-and-white striped awnings in a row", "Chinese commercial signage and other stores", "piled package and boxes near the entrance"]
+    },
+    "BP_Building_39_C": 
+    {
+        "color": "Gray",
+        "height": "high",
+        "material": "concrete",
+        "type": "Residential building / Apartment",
+        "extra_features": ["A long gray concrete wall with several types of doors: rusty metal gates, roller shutters, and glass entrances.", "Signs in Chinese characters", "Red awnings over some windows", "Stacked boxes and hand trucks outside", "Clothes hanging outside upper - floor windows"]
+    },
+    "BP_Building_40_C":
+    {
+        "color": "White and gray",
+        "height": "high",
+        "material": "concrete",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["Signs in Chinese characters", "Stacked boxes and equipment outside", ""]
+    },
+    "BP_Building_41_C":
+    {
+        "color": "Red and green",
+        "height": "high",
+        "material": "concrete and glass",
+        "type": "Residential building / Hotel",
+        "extra_features": ["Curved pink brick facade on the lower levels", "Multiple floors of windows", "several benches and trash bins outside"]
+    },
+    "BP_Building_42_C":
+    {
+        "color": "Gray and beige",
+        "height": "high",
+        "material": "concrete and glass",
+        "type": "Residential / Commercial Building",
+        "extra_features": ["Signs in Chinese characters", " Two white round tables with red legs are placed in front of the wall.", "A long gray wall with multiple glass door entrances."]
+    },
+    "BP_Building_43_C":
+    {
+        "color": "Gray and pink",
+        "height": "high",
+        "material": "concrete",
+        "type": "Residential building / Apartment",
+        "extra_features": ["Signs in Chinese characters", "Metal shutters over some ground - level entrances", "Exposed concrete texture on the facade"]
+    },
+    "BP_Building_44_C":
+    {
+        "color": "Gray and pink",
+        "height": "high",
+        "material": "concrete",
+        "type": "Residential building / Hotel",
+        "extra_features": ["Signs in various colors, including red and black", "Exposed concrete texture with weathering", "curved concrate facade", "stacked boxes and a handcart outside"]
+    },
+    "BP_Building_45_C":
+    {
+        "color": "Gray and brown",
+        "height": "high",
+        "material": "concrete and glass",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["a long brown brick wall with several sections of gray metal roller shutters and glass doors", "Large glass windows with green tint on the second floor", "Stacked boxes and green dumpsters outside"]
+    },
+    "BP_Building_46_C":
+    {
+        "color": "White",
+        "height": "high",
+        "material": "glass and concrete",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["Modern, sleek design with large glass windows",  "Above the glass panels, horizontal metal ventilation grilles run across the facade.", "Some lower - level windows covered with metal shutters"]
+    },
+    "BP_Building_47_C":
+    {
+        "color": "Gray on the lower floors and beige on the upper floors",
+        "height": "high",
+        "material": "concrete and glass",
+        "type": "Residential / Commercial Building",
+        "extra_features": ["Two trash bins at the door entrances.", "Three prominent cylindrical columns in the center"]
+    },
+    "BP_Building_48_C":
+    {
+        "color": "Gray and brown",
+        "height": "high",
+        "material": "concrete",
+        "type": "Residential building / Apartment",
+        "extra_features":  ["a long brown brick wall with several sections of gray metal roller shutters and glass doors","Metal shutters over some ground - level entrances", "Stacked boxes and hand trucks outside"]
+    },
+    "BP_Building_49_C":
+    {
+        "color": "Gray",
+        "height": "high",
+        "material": "concrete and glass",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["The ground floor has glass storefront panels following the curve.", "rounded lower section with large windows", "boxes and utility containers outside the building"]
+    },
+    "BP_Building_50_C":
+    {
+        "color":"Mainly white",
+        "height": "high",
+        "material": "concrete",
+        "type": "Residential building / Apartment",
+        "extra_features":  ["Green trash bins are placed along the storefront, under the large billboard.","Large digital billboard with Chinese text", "Modern glass facade with metal framing", "Stacked boxes and equipment outside"]
+    },
+    "BP_Building_51_C":
+    {
+        "color": "Mainly white with green glasss",
+        "height": "high",
+        "material": "concrete",
+        "type": "Residential building / Apartment",
+        "extra_features":  ["Large, cylindrical white columns", "Modern glass facade with green tint", "Checker - board pattern on the exterior walls", "Bicycles parked outside"]
+    },
+    "BP_Building_52_C":
+    {
+        "color": "Pink",
+        "height": "high",
+        "material": "brick and concrete",
+        "type": "Residential building / Apartment",
+        "extra_features": ["Signs in Chinese characters", "Striped awning over a small entrance", "Stacked boxes and a hand truck outside"]
+    },
+    "BP_Building_53_C":
+    {
+        "color": "Brown and yellow",
+        "height": "high",
+        "material": "brick and concrete",
+        "type": "Residential building / Apartment",
+        "extra_features": ["rectangular vertical windows", "commercial signages for stores", "boxes and a handcart outside the ground - floor shops"]
+    },
+    "BP_Building_54_C":
+    {
+        "color": "Gray",
+        "height": "high",
+        "material": "concrete",
+        "type": "Residential building / Apartment",
+        "extra_features": ["Green scaffolding on part of the facade", "windows covered with various colorful posters", "stacked boxes and a handcart outside"]
+    },
+    "BP_Building_55_C":
+    {
+        "color": "Brown and concrete - gray",
+        "height": "low",
+        "material": "concrete",
+        "type": "Parking garage",
+        "extra_features": ["large Chinese characters on the facade", "boxes and a handcart outside the building", "metal shutters"]
+    },
+    "BP_Building_56_C":
+    {
+        "color": "Brown",
+        "height": "high",
+        "material": "concrete",
+        "type": "Residential building / Apartment",
+        "extra_features": ["large billboard with Chinese characters", "boxes and a small outdoor setup at the base", "a dark wall with three glass doors"]
+    },
+    "BP_Building_58_C":
+    {
+        "color": "Gray and brown",
+        "height": "high",
+        "material": "concrete and brick",
+        "type": "Residential building / Apartment",
+        "extra_features": ["large billboard with Chinese characters", "Blue striped awnings over some windows", "boxes and items outside the building"]
+    },
+    "BP_Building_59_C":
+    {
+        "color": "Light pink and off white",
+        "height": "high",
+        "material": "concrete",
+        "type": "Residential building / Apartment",
+        "extra_features": ["Chinse commercial signages", "multiple blue striped awnings over some windows"]
+    },
+    "BP_Building_60_C":
+    {
+        "color": "Gray",
+        "height": "high",
+        "material": "concrete",
+        "type": "Residential building / Apartment",
+        "extra_features": ["Blue and red chinese commercial signages", "boxes and a handcart outside the building"]
+    },
+    "BP_Building_61_C":
+    {
+        "color": "Gray and blue",
+        "height": "high",
+        "material": "brick, concrete and glass",
+        "type": "Residential building / Apartment",
+        "extra_features": ["Red and Yellow Chinese commercial signages", "boxes and a handcart outside the building", "an overflowing trash bin and a fallen orange trash container"]
+    },
+    "BP_Building_62_C":
+    {
+        "color": "Gray and white",
+        "height": "medium",
+        "material": "concrete",
+        "type": "Residential building / Apartment",
+        "extra_features": ["boxes and packages outside the building", "multiple glass doors", " A giant billboard above shows green juice bottles and spinach leaves."]
+    },
+    "BP_Building_63_C":
+    {
+        "color": "Pink, gray and beige",
+        "height": "low",
+        "material": "concrete",
+        "type": "Residential building / Apartment",
+        "extra_features": ["A red lantern hangs near the rightmost shop.", "a blue electronics store sign", "boxes and handcart", "A gray concrete wall with multiple entrances: some covered by roller shutters, others with glass doors."]
+    },
+    "BP_Building_64_C":
+    {
+        "color": "Gray",
+        "height": "low",
+        "material": "concrete",
+        "type": "Residential building / Apartment",
+        "extra_features": ["The right side features two rusted metal doors with green trash bins placed nearby.", "A gray concrete wall with multiple entrances.", "commercial signages", "boxes and handcart"]
+    },
+    "BP_Building_65_C":
+    {
+        "color": "Gray and brown",
+        "height": "high",
+        "material": "concrete and brick",
+        "type": "Residential building / Apartment",
+        "extra_features": ["Chinese commercial signages", "handcarts outside", "two blue striped awnings over some windows", "a red and yellow signage", "multiple glass doors"]
+    },
+    "BP_Building_66_C":
+    {
+        "color": "Brown and gray",
+        "height": "medium",
+        "material": "concrete",
+        "type": "Residential building / Apartment",
+        "extra_features": [" three vertical hanging signs in green, blue, and black.", "A light gray concrete wall with multiple glass door entrances"]
+    },
+    "BP_Building_67_C":
+    {
+        "color": "Gray and white with green accents",
+        "height": "high",
+        "material": "concrete and glass",
+        "type": "Commercial Building",
+        "extra_features": ["large billboard with Chinese characters", "Large, arched concrete columns", "Modern glass facade with green tint", "Large, open - plan interior visible through the glass", "Green and white trash bins outside"]
+    },
+    "BP_Building_68_C":
+    {
+        "color": "Red - brick and gray",
+        "height": "high",
+        "material": "brick and concrete",
+        "type": "Residential / Office Building / Commercial Building",
+        "extra_features": ["Traditional red brick facade with white concrete borders", "Multiple rectangular windows with metal frames", "Symmetrical design with vertical concrete elements"]
+    },
+    "BP_Building_69_C":
+    {
+        "color": "Gray",
+        "height": "high",
+        "material": "Stone",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["A gray tiled stone wall", "Regularly spaced rectangular windows with some covered by shutters", "Symmetrical and repetitive architectural design"]
+    },
+    "BP_Building_70_C":
+    {
+        "color": "Beige and gray",
+        "height": "high",
+        "material": "brick and glass",
+        "type": "Office Building / Commercial Building",
+        "extra_features": [" Vertical wall lights mounted on the brick columns", "Multiple metal-framed glass awning", "Large, numerous glass windows providing ample natural light", "Symmetrical architectural layout"]
+    },
+    "BP_Building_71_C":
+    {
+        "color": "Gray",
+        "height": "high",
+        "material": "concrete and glass",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["square white pillars", " a glass storefront at the ground level", "Modern structural design with prominent columns at the base"]
+    },
+    "BP_Building_72_C":
+    {
+        "color": "Dark gray",
+        "height": "high",
+        "material": "concrete",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["Large, floor - to - ceiling glass windows", "Textured, speckled concrete facade", "Visible interior columns through the glass", "Symmetrical arrangement of windows and structural elements"]
+    },
+    "BP_Building_73_C":
+    {
+        "color": "Gray and dark brown",
+        "height": "high",
+        "material": "concrete and glass",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["sharp building corner", "Modern design with extensive use of glass and metal", "Large, floor - to - ceiling windows providing a clear view of the interior", "large glass panels divided by brown metal frames"]
+    },
+    "BP_Building_74_C":
+    {
+        "color": "Dark gray",
+        "height": "high",
+        "material": "concrete and glass",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["Uniform gray concrete facade with white horizontal lines", "Rectangular windows with metal frames", "Visible interior columns through the glass", "Simple and functional architectural design"]
+    },
+    "BP_Building_75_C":
+    {
+        "color": "Beige",
+        "height": "high",
+        "material": "stone and glass",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["Three large, arched glass windows on the lower level",  "Stone - textured facade giving it a classic appearance", "Symmetrical architectural design"]
+    },
+    "BP_Building_76_C":
+    {
+        "color": "Red - brick with beige accents",
+        "height": "high",
+        "material": "brick, concrete, and glass",
+        "type": "Office Building / Commercial Building",
+        "extra_features": [ "Brick - clad with beige horizontal bands", "Large, open - plan ground floor with glass walls", "Symmetrical architectural design"]
+    },
+    "BP_Building_77_C":
+    {
+        "color": "Red - brick with gray accents",
+        "height": "medium",
+        "material": "brick and concrete",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["Large rectangular glass windows on the ground floor", "Vertical light stone columns ", "Curved architectural details at the corners"]
+    },
+    "BP_Building_78_C":
+    {
+        "color": "Red - brick with beige accents",
+        "height": "low",
+        "material": "brick and glass",
+        "type": "Clean laundry",
+        "extra_features": ["Traditional red brick facade with white horizontal accents", "Mixture of rectangular and arched windows with white frames", "Outdoor wall - mounted lights", "an attached smaller side building featuring a glass facade labeled 'CLEAN LAUNDRY'"]
+    },
+    "BP_Building_79_C":
+    {
+        "color": "Dark gray - brick",
+        "height": "medium",
+        "material": "brick and glass",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["Large rectangular glass windows on the ground floor", "Dark gray awnings over the ground - floor windows", "Air conditioning units installed on the second floor windows"]
+    },
+    "BP_Building_80_C":
+    {
+        "color": "Gray",
+        "height": "medium",
+        "material": "stonee and glass",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["Large, dark - framed glass doors on the ground floor", "Smaller rectangular windows above the doors", "Air conditioning units installed above some windows"]
+    },
+    "BP_Building_81_C":
+    {
+        "color": "Red - brick with gray accents",
+        "height": "medium",
+        "material": "brick and concrete",
+        "type": "Residential building / Apartment",
+        "extra_features": ["a single leafy tree planted in a small square green patch.", "grid-patterned glass", "Brick fence", "Green doors on the ground floor", "a large black roller shutter on the left", " Decorative round emblems are placed above the storefronts."]
+    },
+    "BP_Building_82_C":
+    {
+        "color": "Red - brick with beige accents",
+        "height": "high",
+        "material": "brick and concrete",
+        "type": "Residential building / Apartment",
+        "extra_features": ["Large garage doors on the ground floor", "Wall - mounted lights in front of the building", "multiple black awnings", "white signs reading 'MILLWORKS', 'CREEK DELI', and 'FIRE GRILL'"]
+    },
+    "BP_Building_83_C":
+    {
+        "color": "Red - brick with gray accents",
+        "height": "high",
+        "material": "brick and glass",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["Large, dark - framed glass windows on the ground floor", "Dark overhang above the ground - floor windows", "Golden sign reading 'Bar & Grill'"]
+    },
+    "BP_Building_84_C":
+    {
+        "color": "Gray - brick",
+        "height": "high",
+        "material": "brick and concrete",
+        "type": "Residential building / Apartment",
+        "extra_features": ["A light stone ground floor with black-framed glass windowsd ", "One arched glass door in the center", "Fire escape on the upper facade"]
+    },
+    "BP_Building_85_C":
+    {
+        "color": "Gray - brick",
+        "height": "high",
+        "material": "brick and concrete",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["Six large, arched glass windows and doors", "Two smaller rectangular side doors", "Black - framed glass elements", "Wall - mounted spherical light fixtures"]
+    },
+    "BP_Building_86_C":
+    {
+        "color": "Red - brick with beige accents",
+        "height": "high",
+        "material": "brick and concrete",
+        "type": "Warehouse / Industrial Building",
+        "extra_features": [" A large black arched gate is in the center", "Fire escape on the side", "Wall - mounted light fixtures", "Narrow green lawn areas with black fences"]
+    },
+    "BP_Building_87_C":
+    {
+        "color": "Red - brick with gray accents",
+        "height": "medium",
+        "material": "brick and concrete",
+        "type": "Hospital (medical facility)",
+        "extra_features": ["Large glass windows for natural light", "Signage for 'CENTRAL HOSPITAL' on the entrance", "Ramps and steps for accessibility"]
+    },
+    "BP_Building_88_C":
+    {
+        "color": "White with gray accents",
+        "height": "low",
+        "material": "concrete",
+        "type": "School",
+        "extra_features": ["Rectangular green - framed windows", "Large central entrance with steps", "Beige structural elements on the facade"]
+    },
+    "BP_Building_89_C":
+    {
+        "color": "Gray with green accents",
+        "height": "high",
+        "material": "steel, glass, and concrete",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["Exposed steel framework", "Green - tinted glass windows", "Circular windows on the lower facade", "Modern, sleek design"]
+    },
+    "BP_Building_90_C":
+    {
+        "color": "Gray - brown with green accents",
+        "height": "high",
+        "material": "concrete and glass",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["Large billboard advertisement", "Multiple rectangular windows with dark frames", "Metal structural elements on the green - tinted glass facade"]
+    },
+    "BP_Building_91_C":
+    {
+        "color": "Gray with green accents",
+        "height": "high",
+        "material": "concrete and glass",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["Large, vertical glass windows with green tint", "Horizontal concrete panels on the facade", "Circular and rectangular architectural elements", "Covered entrance area with columns"]
+    },
+    "BP_Building_92_C":
+    {
+        "color": "Gray with green accents",
+        "height": "high",
+        "material": "concrete and glass",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["Green - tinted glass windows", "Modern, sleek design", "Curved architectural elements", "Glass - enclosed walkways"]
+    },
+    "BP_Building_93_C":
+    {
+        "color": "Gray with green accents",
+        "height": "high",
+        "material": "concrete and glass",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["Large, green - tinted glass windows on upper floors", "Dark gray horizontal bands on the facade", "Concrete base with curved driveway", "Cylindrical bollards near the entrance"]
+    },
+    "BP_Building_94_C":
+    {
+        "color": "Gray with green accents",
+        "height": "high",
+        "material": "concrete and glass",
+        "type": "Office Building / Commercial Building",
+        "extra_features": ["Horizontal dark gray bands on the facade", "Large, cylindrical concrete columns", "Modern, angular architectural design"]
+    },
+    "BP_Building_95_C": 
+    {
+        "color": "Brown and beige",
+        "height": "medium",
+        "material": "Brick and concrete",
+        "type": "Commercial building / Hotel",
+        "extra_features": ["A large black canopy supported by angled rods covers multiple glass door entrances", "Multiple arched windows and doors on the ground floor", "Rectangular windows with green - tinted glass on upper floors", "Ornate brickwork and decorative elements"]
+    },
+    "BP_Building_96_C":
+    {
+        "color": "Brown and gray",
+        "height": "medium",
+        "material": "Brick and concrete",
+        "type": "Commercial building / Office building",
+        "extra_features": ["Arched doorways with decorative stone surrounds on the ground floor", "A large red and yellow billboard on the facade"]
+    },
+    "BP_Building_97_C":
+    {
+        "color": "Gray and black",
+        "height": "high",
+        "material": "Glass and concrete",
+        "type": "Commercial building",
+        "extra_features": ["Large reflective glass windows on the facade", "Prominent black signage reading 'NATASHA'S EST. 1998'", "A colorful 'Fizzy Cup' advertisement on the lower right", "Rectangular glass - framed entrances on the ground floor"]
+    },
+    "BP_Building_98_C":
+    {
+        "color": "Gray and green",
+        "height": "low",
+        "material": "Stone and glass",
+        "type": "Commercial / public building",
+        "extra_features": ["Large arched glass windows with green framing", "Tall classical columns in the front", "Intricate stone detailing around windows and doors"]
+    },
+    "BP_Building_99_C":
+    {
+        "color": "Gray and green",
+        "height": "medium",
+        "material": "Stone and glass",
+        "type": "Museum / Exhibition Hall",
+        "extra_features": ["A grand neoclassical building with white stone walls", "Tall classical columns in the front", "Ornate stone detailing around windows and doors", "Grand staircase leading to the entrance"]
+    },
+    "BP_Building_100_C":
+    {
+        "color": "Brown, gray and beige",
+        "height": "medium",
+        "material": "Brick and concrete",
+        "type": "Commercial building / Office building",
+        "extra_features": ["Arched windows on the ground floor", "Staircase with stone railing leading to an entrance", "Flagpoles with multiple flags (America, Germanys) flying"]
+    },
+    "BP_Building_101_C":
+    {
+        "color": "Gray",
+        "height": "high",
+        "material": "Brick and concrete",
+        "type": "office building",
+        "extra_features": ["three tall arched windows in the middle",  "Small circular windows and vertical rectangular windows on the facade"]
+    },
+    "BP_Building_102_C":
+    {
+        "color": "Gray",
+        "height": "low",
+        "material": "Stone and glass",
+        "type": "Museum / Exhibition Hall",
+        "extra_features": ["Large arched windows with dark frames", "Tall classical columns in the front", "Grand staircase leading to the entrance"]
+    },
+    "BP_Building_103_C":
+    {
+        "color": "Gray",
+        "height": "high",
+        "material": "Concrete and glass",
+        "type": "Commercial building / Office building",
+        "extra_features": ["Numerous rectangular windows with dark frames", "A large overhanging awning at the entrance", "Small decorative lanterns on either side of the entrance"]
+    },
+    "BP_Building_104_C":
+    {
+        "color": "Gray and blue",
+        "height": "high",
+        "material": "Glass and steel",
+        "type": "Commercial building / Office building",
+        "extra_features": ["Extensive grid - like pattern of glass windows", "Large vertical steel columns framing the facade", "Multiple sets of glass revolving doors at the entrance"]
+    },
+    "BP_Building_105_C":
+    {
+        "color": "Gray and black",
+        "height": "medium",
+        "material": "Glass and concrete",
+        "type": "Commercial building",
+        "extra_features": ["Large reflective glass windows on the facade", "Prominent signage for 'MACBETH' and 'NATASHA'S EST. 1998'", "A modern white and metallic awning over the entrance", "Billboards and advertisements on the exterior"]
+    },
+    "BP_Building_106_C":
+    {
+        "color": "Gray",
+        "height": "high",
+        "material": "Stone and glass",
+        "type": "Commercial / Office building",
+        "extra_features": ["Numerous rectangular and arched windows", "Ornate stone detailing around windows and doors", "A central arched entrance with a revolving door", "Tall vertical columns on the ground floor"]
+    },
+    "BP_Building_107_C":
+    {
+        "color": "Gray",
+        "height": "high",
+        "material": "Concrete and glass",
+        "type": "Commercial or office building",
+        "extra_features": ["Uniform rows of rectangular windows", "Vertical light fixtures on the facade", "Metal - gated entrances"]
+    },
+    "BP_Building_108_C":
+    {
+        "color": "Gray and green",
+        "height": "high",
+        "material": "Stone and glass",
+        "type": "Commercial / Office building",
+        "extra_features": ["Large arched windows with dark frames", "Ornate stone detailing around windows and doors", "Small decorative lanterns between windows"]
+    },
+    "BP_Building_109_C":
+    {
+        "color": "Gray and beige",
+        "height": "high",
+        "material": "Concrete and glass",
+        "type": "Commercial / Office building",
+        "extra_features": ["Rectangular windows with dark frames", "American flags hanging on the facade", "Large glass - framed entrances"]
+    },
+    "BP_Building_110_C":
+    {
+        "color": "Gray",
+        "height": "high",
+        "material": "Concrete and glass",
+        "type": "Commercial / Office building",
+        "extra_features": ["Large glass - framed entrances with dark frames", "Textured stone - like patterns on the facade", "Uniform architectural design across floors"]
+    },
+    "BP_Building_111_C":
+    {
+        "color": "Green and black",
+        "height": "high",
+        "material": "Glass and steel",
+        "type": "Commercial building",
+        "extra_features": ["Abundant grid - like glass windows", "Numerous colorful billboards and advertisements on the facade", "Modern, sleek architectural design"]
+    },
+    "BP_Building_112_C":
+    {
+        "color": "Gray",
+        "height": "high",
+        "material": "Concrete and glass",
+        "type": "Commercial building",
+        "extra_features": ["Large vertical billboards advertising 'SUNDOWN WHISKEY' and other events", "Circular windows on the lower facade", "Brightly lit digital signs reading 'CLASH'"]
+    },
+    "BP_Building_113_C":
+    {
+        "color": "Gray",
+        "height": "medium",
+        "material": "Concrete and glass",
+        "type": "Commercial building",
+        "extra_features": ["Tall vertical columns on the facade", "Large arched windows with glass panes", "Red banners with 'SUPERDRIP' text", "A modern overhanging entrance with glass doors"]
+    },
+    "BP_Building_114_C":
+    {
+        "color": "Gray and white",
+        "height": "medium",
+        "material": "Concrete and glass",
+        "type": "Commercial building",
+        "extra_features": ["Arched windows with glass panes", "Colorful vertical banners with 'SUPERDRIP', 'TLK' and geometric patterns", "A modern overhanging structure with glass elements"]
+    },
+    "BP_Building_115_C":
+    {
+        "color": "Gray and brown",
+        "height": "high",
+        "material": "Stone and glass",
+        "type": "Commercial / Office building",
+        "extra_features": ["Uniform grid of rectangular windows", "Dark - framed entrance doors with glass panels", "Small decorative lanterns near the entrance", "Ornate stone detailing around doors and windows"]
+    },
+    "BP_Building_116_C":
+    {
+        "color": "Gray and beige",
+        "height": "medium",
+        "material": "Stone and glass",
+        "type": "Commercial / Office building",
+        "extra_features": ["American flags hanging on the facade", "Gray awnings over the ground - floor windows", "Small decorative elements around windows and doors"]
+    },
+    "BP_Building_117_C":
+    {
+        "color": "Gray",
+        "height": "high",
+        "material": "Concrete and glass",
+        "type": "Commercial / Office building",
+        "extra_features": ["Large glass - framed entrances", "Prominent vertical concrete columns on the facade"]
+    },
+    "BP_Building_118_C":
+    {
+        "color": "Gray",
+        "height": "high",
+        "material": "Concrete and glass",
+        "type": "Commercial / Office building",
+        "extra_features": ["American flags hanging on the facade", "Sleek, modern architectural design", "Uniform grid - like pattern of windows"]
+    },
+    "BP_Building_119_C":
+    {
+        "color": "Gray and black",
+        "height": "high",
+        "material": "Concrete and glass",
+        "type": "Commercial / Office building",
+        "extra_features": ["A unique geometric - shaped entrance with dark framing", "Sleek, modern architectural design", "Uniform facade with subtle texture variations"]
+    },
+    "BP_Building_121_C":
+    {
+        "color": "Gray and green",
+        "height": "high",
+        "material": "Glass and steel",
+        "type": "Commercial building",
+        "extra_features": ["Abundant grid - like glass windows", "Large, colorful billboards advertising 'SUPERDRIP' and 'CLASH! THE MUSICAL'", "Modern, sleek architectural design", "Curved glass - framed sections on the lower facade"]
+    },
+    "BP_Building_122_C":
+    {
+        "color": "Green and black",
+        "height": "high",
+        "material": "Glass and steel",
+        "type": "Commercial building",
+        "extra_features": ["Diagonal structural steel lines creating a dynamic pattern on the facade", "Large, eye - catching billboards advertising 'MACBETH', 'STOP IN BROOKLYN' and 'TLK'", "A modern, minimalist entrance with a small overhang"]
+    },
+    "BP_Building_123_C":
+    {
+        "color": "Gray and glass - reflective",
+        "height": "low",
+        "material": "Concrete, glass, and steel",
+        "type": "Entertainment / Event venue",
+        "extra_features": ["Large, circular glass - domed roof", "Prominent steel arch structures extending from the roof", "Abundant colorful billboards and advertisements", "A modern entrance with steps and a wide overhang", "A large facade covered with glass panels"]
+    },
+    "BP_Building_124_C":
+    {
+        "color": "Brown and gray",
+        "height": "medium",
+        "material": "Brick and stone",
+        "type": "Commercial / Office building",
+        "extra_features": ["Arched windows with gray stone detailing", "Small gray awnings over the ground - floor windows", "A large central arched entrance with glass panels", "Ornate architectural details around windows and doors"]
+    },
+    "BP_Building_125_C":
+    {
+        "color": "Gray and black",
+        "height": "high",
+        "material": "Concrete and glass",
+        "type": "Commercial / Office building",
+        "extra_features": ["Vertical lines of rectangular windows", "A unique geometric - shaped entrance with dark framing", "Sleek, modern architectural design", "Uniform facade with subtle texture variations"]
+    },
+    "BP_Building_126_C":
+    {
+        "color": "Gray, green and black",
+        "height": "high",
+        "material": "Glass and steel",
+        "type": "Commercial building",
+        "extra_features": ["Abundant grid - like glass windows", "Large, colorful billboards advertising 'VALLEY VR' and 'FINANCE SAFE'", "Modern, sleek architectural design", "A distinct green - tinted section on the facade"]
+    }
+}
+

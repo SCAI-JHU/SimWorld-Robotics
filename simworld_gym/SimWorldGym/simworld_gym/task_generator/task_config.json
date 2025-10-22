@@ -1,0 +1,31 @@
+{
+  "type": "spot",
+  "camera_id": 1,
+  "instance_name": "BP_SpotRobot_C",
+  "agent_name": "SportRobot_1",
+  "radius": 70,
+  "benchmark_type": 0,
+  "destination": {
+    "x": -48500.0,
+    "y": -21700.0,
+    "z": 67.818145
+  },
+  "criteria": {
+    "max_steps": 23800.0,
+    "dist_threshold": 500
+  },
+  "spawning_point": {
+    "location": {
+      "x": -41700.0,
+      "y": -4700.0,
+      "z": 67.818145
+    },
+    "orientation": {
+      "roll": 0,
+      "pitch": 0,
+      "yaw": 90
+    }
+  },
+  "instruction": "Face the White High Rise Building with 90 floors on your Right. Move along Poole Street. At the intersection, turn left and cross the street. Continue on Eldone Road. Stop when you see the red Residential Building with Ground Floor Shops, 7 floors high, on your Left.",
+  "map_path": "map.png"
+}

@@ -1,0 +1,39 @@
+{
+    "action_space": {
+        "type": "discrete",
+        "n": 6
+    },
+    "action_meanings": {
+        "0": "MOVE_FORWARD",
+        "1": "MOVE_BACKWARD",
+        "2": "MOVE_LEFT",
+        "3": "MOVE_RIGHT",
+        "4": "TURN_RIGHT",
+        "5": "TURN_LEFT",
+        "6": "SEND_MESSAGE",
+        "100": "TERMINATE"
+    },
+    "action_parameters": {
+        "movement": {
+            "speed": 5000,
+            "duration": 0.1,
+            "directions": {
+                "MOVE_FORWARD": {"direction": 0},
+                "MOVE_BACKWARD": {"direction": 1},
+                "MOVE_LEFT": {"direction": 2},
+                "MOVE_RIGHT": {"direction": 3}
+            }
+        },
+        "rotation": {
+            "duration": 0.1,
+            "angle": {
+                "TURN_RIGHT": 90,
+                "TURN_LEFT": -90
+            },
+            "directions": {
+                "TURN_RIGHT": {"direction": 1},
+                "TURN_LEFT": {"direction": -1}
+            }
+        }
+    }
+} 

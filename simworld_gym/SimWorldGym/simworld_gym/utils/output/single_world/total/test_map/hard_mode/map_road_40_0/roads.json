@@ -1,0 +1,484 @@
+{
+  "roads": [
+    {
+      "start": {
+        "x": 0,
+        "y": 0
+      },
+      "end": {
+        "x": 200.0,
+        "y": 0.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_0"
+    },
+    {
+      "start": {
+        "x": 0,
+        "y": 0
+      },
+      "end": {
+        "x": -200.0,
+        "y": 0.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_1"
+    },
+    {
+      "start": {
+        "x": 200.0,
+        "y": 0.0
+      },
+      "end": {
+        "x": 200.0,
+        "y": -200.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_2"
+    },
+    {
+      "start": {
+        "x": 200.0,
+        "y": 0.0
+      },
+      "end": {
+        "x": 200.0,
+        "y": 200.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_3"
+    },
+    {
+      "start": {
+        "x": -200.0,
+        "y": 0.0
+      },
+      "end": {
+        "x": -400.0,
+        "y": 0.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_4"
+    },
+    {
+      "start": {
+        "x": -200.0,
+        "y": 0.0
+      },
+      "end": {
+        "x": -200.0,
+        "y": -200.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_5"
+    },
+    {
+      "start": {
+        "x": 200.0,
+        "y": -200.0
+      },
+      "end": {
+        "x": 200.0,
+        "y": -400.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_6"
+    },
+    {
+      "start": {
+        "x": 200.0,
+        "y": -200.0
+      },
+      "end": {
+        "x": 400.0,
+        "y": -200.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_7"
+    },
+    {
+      "start": {
+        "x": 200.0,
+        "y": 200.0
+      },
+      "end": {
+        "x": 200.0,
+        "y": 400.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_8"
+    },
+    {
+      "start": {
+        "x": -200.0,
+        "y": -200.0
+      },
+      "end": {
+        "x": -200.0,
+        "y": -400.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_9"
+    },
+    {
+      "start": {
+        "x": 200.0,
+        "y": -400.0
+      },
+      "end": {
+        "x": 200.0,
+        "y": -600.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_10"
+    },
+    {
+      "start": {
+        "x": 200.0,
+        "y": -400.0
+      },
+      "end": {
+        "x": 0.0,
+        "y": -400.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_11"
+    },
+    {
+      "start": {
+        "x": 200.0,
+        "y": -400.0
+      },
+      "end": {
+        "x": 400.0,
+        "y": -400.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_12"
+    },
+    {
+      "start": {
+        "x": 400.0,
+        "y": -200.0
+      },
+      "end": {
+        "x": 400.0,
+        "y": 0.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_13"
+    },
+    {
+      "start": {
+        "x": 200.0,
+        "y": 400.0
+      },
+      "end": {
+        "x": 200.0,
+        "y": 600.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_14"
+    },
+    {
+      "start": {
+        "x": -200.0,
+        "y": -400.0
+      },
+      "end": {
+        "x": 0.0,
+        "y": -400.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_15"
+    },
+    {
+      "start": {
+        "x": 200.0,
+        "y": -600.0
+      },
+      "end": {
+        "x": 0.0,
+        "y": -600.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_16"
+    },
+    {
+      "start": {
+        "x": 0.0,
+        "y": -400.0
+      },
+      "end": {
+        "x": 0.0,
+        "y": -600.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_17"
+    },
+    {
+      "start": {
+        "x": 400.0,
+        "y": -400.0
+      },
+      "end": {
+        "x": 600.0,
+        "y": -400.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_18"
+    },
+    {
+      "start": {
+        "x": 400.0,
+        "y": 0.0
+      },
+      "end": {
+        "x": 400.0,
+        "y": 200.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_19"
+    },
+    {
+      "start": {
+        "x": 200.0,
+        "y": 600.0
+      },
+      "end": {
+        "x": 200.0,
+        "y": 800.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_20"
+    },
+    {
+      "start": {
+        "x": 0.0,
+        "y": -600.0
+      },
+      "end": {
+        "x": 0.0,
+        "y": -800.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_21"
+    },
+    {
+      "start": {
+        "x": 600.0,
+        "y": -400.0
+      },
+      "end": {
+        "x": 800.0,
+        "y": -400.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_22"
+    },
+    {
+      "start": {
+        "x": 600.0,
+        "y": -400.0
+      },
+      "end": {
+        "x": 600.0,
+        "y": -600.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_23"
+    },
+    {
+      "start": {
+        "x": 600.0,
+        "y": -400.0
+      },
+      "end": {
+        "x": 600.0,
+        "y": -200.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_24"
+    },
+    {
+      "start": {
+        "x": 400.0,
+        "y": 200.0
+      },
+      "end": {
+        "x": 400.0,
+        "y": 400.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_25"
+    },
+    {
+      "start": {
+        "x": 400.0,
+        "y": 200.0
+      },
+      "end": {
+        "x": 600.0,
+        "y": 200.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_26"
+    },
+    {
+      "start": {
+        "x": 200.0,
+        "y": 800.0
+      },
+      "end": {
+        "x": 200.0,
+        "y": 1000.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_27"
+    },
+    {
+      "start": {
+        "x": 600.0,
+        "y": -200.0
+      },
+      "end": {
+        "x": 800.0,
+        "y": -200.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_28"
+    },
+    {
+      "start": {
+        "x": 400.0,
+        "y": 400.0
+      },
+      "end": {
+        "x": 400.0,
+        "y": 600.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_29"
+    },
+    {
+      "start": {
+        "x": 400.0,
+        "y": 400.0
+      },
+      "end": {
+        "x": 200.0,
+        "y": 400.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_30"
+    },
+    {
+      "start": {
+        "x": 600.0,
+        "y": 200.0
+      },
+      "end": {
+        "x": 600.0,
+        "y": 0.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_31"
+    },
+    {
+      "start": {
+        "x": 200.0,
+        "y": 1000.0
+      },
+      "end": {
+        "x": 0.0,
+        "y": 1000.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_32"
+    },
+    {
+      "start": {
+        "x": 200.0,
+        "y": 1000.0
+      },
+      "end": {
+        "x": 400.0,
+        "y": 1000.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_33"
+    },
+    {
+      "start": {
+        "x": 800.0,
+        "y": -200.0
+      },
+      "end": {
+        "x": 800.0,
+        "y": -400.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_34"
+    },
+    {
+      "start": {
+        "x": 800.0,
+        "y": -200.0
+      },
+      "end": {
+        "x": 800.0,
+        "y": 0.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_35"
+    },
+    {
+      "start": {
+        "x": 400.0,
+        "y": 600.0
+      },
+      "end": {
+        "x": 400.0,
+        "y": 800.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_36"
+    },
+    {
+      "start": {
+        "x": 200.0,
+        "y": 400.0
+      },
+      "end": {
+        "x": 0.0,
+        "y": 400.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_37"
+    },
+    {
+      "start": {
+        "x": 600.0,
+        "y": 0.0
+      },
+      "end": {
+        "x": 400.0,
+        "y": 0.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_38"
+    },
+    {
+      "start": {
+        "x": 0.0,
+        "y": 1000.0
+      },
+      "end": {
+        "x": 0.0,
+        "y": 1200.0
+      },
+      "is_highway": false,
+      "road_index": "GEN_Road_39"
+    }
+  ]
+}

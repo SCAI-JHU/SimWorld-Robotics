@@ -1,0 +1,12 @@
+datasets
+fastapi
+peft
+pydantic
+qwen_vl_utils
+torch
+torchvision
+tqdm
+transformers
+trl
+uvicorn
+wandb

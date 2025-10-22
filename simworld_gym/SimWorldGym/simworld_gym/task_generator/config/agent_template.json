@@ -1,0 +1,29 @@
+{
+  "type" : "spot",
+  "camera_id" : 1,
+  "instance_name" : "BP_SpotRobot_C",
+  "agent_name" : "SportRobot_1",
+  "radius" : 70,
+  "benchmark_type" : 0,
+  "destination" : {
+    "x": 18073.058558,
+    "y": 1680.0,
+    "z": 67.818145
+  },
+  "criteria": {
+    "max_steps" : 150,
+    "dist_threshold" : 200
+  },
+  "spawning_point" : {
+    "location" : {
+      "x": 22070.0,
+      "y": 1680.0,
+      "z": 67.818145
+    },
+    "orientation" : {
+      "roll" : 0,
+      "pitch" : 0,
+      "yaw" : 0
+    }
+  }
+}

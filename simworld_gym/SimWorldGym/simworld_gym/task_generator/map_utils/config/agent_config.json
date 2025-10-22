@@ -1,0 +1,6 @@
+[
+    {
+        "agent_type": "customer",
+        "model": "gpt-4o-mini"
+    }
+]

@@ -1,0 +1,14 @@
+{
+    "color": {
+        "ROBOT": "(R=0,G=255,B=128)",
+        "HUMAN": "(R=255,G=192,B=203)"
+    },
+    "BP_SpotRobot_C" : {
+        "asset_path": "/Game/Robot_Dog/Blueprint/BP_SpotRobot.BP_SpotRobot_C",
+        "color": "ROBOT"
+    },
+    "BP_DefaultHuman_C" : {
+        "asset_path": "/Game/Human_Avatar/DefaultCharacter/Blueprint/BP_Default_Character.BP_Default_Character_C",
+        "color": "HUMAN"
+    }
+}
