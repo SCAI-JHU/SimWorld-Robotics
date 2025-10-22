@@ -1,6 +1,7 @@
 # SimWorld-Robotics: Synthesizing Photorealistic and Dynamic Urban Environments for Multimodal Robot Navigation and Collaboration
-<img src="images/overview.png" alt="overview" width="500">
-
+<p align="center">
+  <img src="images/overview.png" alt="overview" width="800">
+</p>
 **SimWorld-Robotics** is an extension of [SimWorld](https://github.com/SimWorld-AI/SimWorld) that introduces key features for embodied robotics research. These additions include procedural city generation, a traffic system, and support for a new embodied agent: the quadruped robot.
 
 <!-- <div align="center">
