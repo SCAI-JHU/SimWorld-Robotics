@@ -85,18 +85,18 @@ class BaseModel:
         """Standard generation with temperature control."""
         for attempt in range(self.max_retries):
             try:
-                response = self.client.chat.completions.create(
+                response = self.client.responses.create(
                     model=self.model,
-                    messages=messages,
+                    input=messages,
                     temperature=self.temperature,
-                    max_tokens=max_output_tokens or self.max_output_tokens,
+                    max_output_tokens=max_output_tokens or self.max_output_tokens,
                     top_p=self.top_p,
                 )
                 
-                output_text = response.choices[0].message.content
+                output_text = response.output_text
                 usage = {
-                    "input": response.usage.prompt_tokens if response.usage else 0,
-                    "output": response.usage.completion_tokens if response.usage else 0,
+                    "input": response.usage.input_tokens if response.usage else 0,
+                    "output": response.usage.output_tokens if response.usage else 0,
                 }
                 
                 return {
@@ -114,40 +114,16 @@ class BaseModel:
         messages: List[Dict[str, Any]],
         max_output_tokens: Optional[int] = None,
     ) -> Dict[str, Any]:
-        """Reasoning generation with effort parameter (for o1/o3 models)."""
-        # Convert messages to reasoning API format
-        reasoning_messages = []
+        """Reasoning generation with effort parameter (for o1/o3/gpt-5 models)."""
         for msg in messages:
             if msg["role"] == "system":
-                # System prompts become user messages in reasoning API
-                reasoning_messages.append({
-                    "role": "user",
-                    "content": [{"type": "input_text", "text": msg["content"]}]
-                })
-            elif msg["role"] == "user":
-                # Handle both text and image content
-                if isinstance(msg["content"], str):
-                    reasoning_messages.append({
-                        "role": "user",
-                        "content": [{"type": "input_text", "text": msg["content"]}]
-                    })
-                elif isinstance(msg["content"], dict):
-                    # Image content
-                    if "url" in msg["content"]:
-                        reasoning_messages.append({
-                            "role": "user",
-                            "content": [{"type": "input_image", "image_url": msg["content"]["url"]}]
-                        })
-                elif isinstance(msg["content"], list):
-                    # Already in reasoning format
-                    reasoning_messages.append(msg)
-
+                msg["role"] = "user"
         for attempt in range(self.max_retries):
             try:
                 response = self.client.responses.create(
                     model=self.model,
                     reasoning={"effort": self.reasoning_effort, "summary": "auto"},
-                    input=reasoning_messages,
+                    input=messages,
                     max_output_tokens=max_output_tokens or self.max_output_tokens,
                     top_p=self.top_p,
                 )
