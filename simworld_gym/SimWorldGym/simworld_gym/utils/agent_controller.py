@@ -3,11 +3,12 @@ import time
 import os
 from simworld_gym.utils import misc
 from simworld_gym.utils.base import Action
+from simworld_gym.utils.unrealcv_basic import UnrealCV
 
 AGENT_ASSET_PATH = "asset/AgentPath.json"
 
 class AgentController:
-    def __init__(self, client, resolution):
+    def __init__(self, client: UnrealCV, resolution):
         self.client = client
         self.resolution = resolution
         self.agent_name = None
@@ -15,6 +16,9 @@ class AgentController:
         self._agent_location = None
         self._agent_rotation = None
         self._target_location = None
+        self._instruction = None
+        self._instruction_image_path = None
+        self._evaluation_of_subtask = None
         self.camera_id = None
         self.agent_library = misc.load_config(AGENT_ASSET_PATH)
         self.action_config = None
@@ -37,6 +41,12 @@ class AgentController:
             orientation = [orientation.get("roll", 0), orientation.get("pitch", 0), orientation.get("yaw", 0)]
             self._set_agent_location(location)
             self._set_agent_rotation(orientation)
+        # Ensure target-related fields are populated every reset
+        try:
+            self._read_target_info(if_single_agent=if_single_agent)
+        except Exception:
+            # Keep reset robust even if target info is temporarily unavailable
+            pass
         self.reset_time += 1
 
     def update_json(self, agent_json):
@@ -112,7 +122,7 @@ class AgentController:
         it will catch and print the exception message.
         """
         try:
-            self.client.custom_set_orientation(rotation, self.agent_name)
+            self.client.set_orientation(rotation, self.agent_name)
         except Exception as e:
             print(f"Error setting rotation for {self.agent_name}: {e}")
 
@@ -371,12 +381,27 @@ class AgentController:
         return self.availability
     
     def return_instruction(self):
+        if self._instruction is None and self.agent_setting is not None:
+            try:
+                self._read_instruction()
+            except Exception:
+                pass
         return self._instruction
     
     def return_instruction_image_path(self):
+        if self._instruction_image_path is None and self.agent_setting is not None:
+            try:
+                self._read_instruction_image_path()
+            except Exception:
+                pass
         return self._instruction_image_path
     
     def return_evaluation_of_subtask(self):
+        if self._evaluation_of_subtask is None and self.agent_setting is not None:
+            try:
+                self._read_evaluation_of_subtask()
+            except Exception:
+                pass
         return self._evaluation_of_subtask
 
 
