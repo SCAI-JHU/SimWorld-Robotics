@@ -1,4 +1,3 @@
-from typing import List, Dict, Any
 from models import BaseModel
 from utils import extract_action_dict
 
@@ -15,7 +14,7 @@ class ReasoningAgent:
         api_key: str = "",
         azure_endpoint: str = "",
         api_version: str = "2025-04-01-preview",
-        model: str = "gpt-4o",
+        model: str = "gpt-5",
         reasoning_effort: str = "medium",
         system_prompt: str = "",
         max_retries: int = 3,
@@ -91,12 +90,19 @@ class ReasoningAgent:
             f"Current Orientation: {orientation}\n\n"
         )
         messages = [{"role": "system", "content": self.system_prompt}]
-        messages.append({"role": "user", "content": [{"type": "input_text", "text": nav_instance}]})
+        
+        # Build single user message with all content parts
+        user_content = [{"type": "input_text", "text": nav_instance}]
         for item in observation:
             if item.get("description"):
-                messages.append({"role": "user", "content": [{"type": "input_text", "text": item["description"]}]})
+                user_content.append({"type": "input_text", "text": item["description"]})
             if item.get("img"):
-                messages.append({"role": "user", "content": [{"type": "input_image", "image_url": f"data:image/png;base64,{item['img']}"}]})
+                user_content.append({
+                    "type": "input_image",
+                    "image_url": f"data:image/png;base64,{item['img']}"
+                })
+        
+        messages.append({"role": "user", "content": user_content})
         result = self.model.generation(messages)
         rd = extract_action_dict(result.get("output", ""))
         return {
@@ -197,7 +203,6 @@ class ReActAgent:
         Returns:
             Dict with vision_description and usage
         """
-        from baseline.single.utils import extract_action_dict
         
         perception_instance = (
             f"Status of last step: {self.summary}\n"
@@ -208,14 +213,19 @@ class ReActAgent:
         )
         
         perception_messages = [{"role": "system", "content": self.perception_prompt}]
-        perception_messages.append({"role": "user", "content": perception_instance})
-
+        
+        # Build single user message with all content parts
+        user_content = [{"type": "input_text", "text": perception_instance}]
         for item in observation:
             if item.get("description"):
-                perception_messages.append({"role": "user", "content": item["description"]})
+                user_content.append({"type": "input_text", "text": item["description"]})
             if item.get("img"):
-                perception_messages.append({"role": "user", "content": {"url": f"data:image/png;base64,{item['img']}"}})
+                user_content.append({
+                    "type": "input_image",
+                    "image_url": f"data:image/png;base64,{item['img']}"
+                })
         
+        perception_messages.append({"role": "user", "content": user_content})
         perception_result = self.model.generation(perception_messages)
         perception_rd = extract_action_dict(perception_result.get("output", ""))
         vision_description = perception_rd.get("Description", None)
