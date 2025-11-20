@@ -19,7 +19,7 @@ This repo serves as a benchmark platform for the SimWorld-MMNav and SimWorld-MRS
 
 1.  A standardized OpenAI gym interface for connecting and evaluating various baselines.
 2.  Procedural scene and task generation for creating diverse and scalable simulation environments and tasks.
-3.  The SimWorld-20k dataset is available via this [link]().
+3.  The SimWorld-20k dataset is available via this [link](https://huggingface.co/datasets/jise/simworld-20k).
 
 
 ### Project Structure
