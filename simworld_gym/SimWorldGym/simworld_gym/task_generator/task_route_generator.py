@@ -423,7 +423,7 @@ class TaskRouteGenerator:
         print(f"Initial robot location: {current_robot_location}")
         
         self.unrealcv_client.set_location_hard([current_robot_location[0], current_robot_location[1], 73.957685], "spot_robot")
-        self.unrealcv_client.custom_set_orientation([0, 0, current_robot_orientation], "spot_robot")
+        self.unrealcv_client.set_orientation([0, 0, current_robot_orientation], "spot_robot")
 
         step = 0
         training_task_path = os.path.join(output_path, task_name)
@@ -773,7 +773,7 @@ class TaskRouteGenerator:
             name_of_robot_view_images.append(f"robot_view_{i}.png")
 
             unrealcv_client.set_location([node['robot_location'][0] * 100, node['robot_location'][1] * 100, 73.957685], "spot_robot")
-            unrealcv_client.custom_set_orientation([0, 0, node['robot_orientation'][0]], "spot_robot")
+            unrealcv_client.set_orientation([0, 0, node['robot_orientation'][0]], "spot_robot")
             time.sleep(2)
             # unrealcv_client.read_image(1, "lit", "file_path", landmark_path)
             img = unrealcv_client.read_image(1, "lit", "direct")

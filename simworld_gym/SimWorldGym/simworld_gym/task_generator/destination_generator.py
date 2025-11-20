@@ -356,7 +356,7 @@ class DestinationGenerator:
         landmark_path = os.path.join(save_path, destination_image_name)
         # time.sleep(0.2)
         unrealcv_client.set_location([camera_position[0], camera_position[1], 92.150003], "picture_man")
-        unrealcv_client.custom_set_orientation([camera_orientation[0], camera_orientation[1], camera_orientation[2]], "picture_man")
+        unrealcv_client.set_orientation([camera_orientation[0], camera_orientation[1], camera_orientation[2]], "picture_man")
         unrealcv_client.client.request("vset /camera/1/location {} {} {}".format(camera_position[0], camera_position[1], 200))
         unrealcv_client.client.request("vset /camera/1/rotation {} {} {}".format(0, camera_orientation[2], 0))
 

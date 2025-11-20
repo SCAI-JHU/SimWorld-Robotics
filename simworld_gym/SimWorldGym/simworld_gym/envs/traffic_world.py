@@ -4,7 +4,7 @@ import time
 from datetime import datetime
 from gym import spaces
 import numpy as np
-from simworld_gym.utils.unrealcv_basic_with_traffic import UnrealCV
+from simworld_gym.utils.unrealcv_basic import UnrealCV
 from simworld_gym.utils import misc
 from simworld_gym.utils.environment_generator_with_traffic import EnvironmentGenerator
 from simworld_gym.utils.agent_controller import AgentController

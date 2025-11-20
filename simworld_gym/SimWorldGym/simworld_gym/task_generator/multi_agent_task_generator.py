@@ -263,7 +263,7 @@ class MultiAgentTaskGenerator:
             # unrealcv_client.client.request("vset /camera/0/rotation {} {} {}".format(0, camera_orientation[2], 0))
             # time.sleep(0.2)
             unrealcv_client.set_location([camera_position[0], camera_position[1], 92.150003], "picture_man")
-            unrealcv_client.custom_set_orientation([camera_orientation[0], camera_orientation[1], camera_orientation[2]], "picture_man")
+            unrealcv_client.set_orientation([camera_orientation[0], camera_orientation[1], camera_orientation[2]], "picture_man")
             unrealcv_client.client.request("vset /camera/1/location {} {} {}".format(camera_position[0], camera_position[1], 200))
             unrealcv_client.client.request("vset /camera/1/rotation {} {} {}".format(0, camera_orientation[2], 0))
 
@@ -288,7 +288,7 @@ class MultiAgentTaskGenerator:
             name_of_robot_view_images.append(f"robot_view_{i}.png")
             # time.sleep(0.2)
             unrealcv_client.set_location([robot_spawning_position[0], robot_spawning_position[1], 67.818145], "spot_robot")
-            unrealcv_client.custom_set_orientation([robot_spawning_orientation[0], robot_spawning_orientation[1], robot_spawning_orientation[2]], "spot_robot")
+            unrealcv_client.set_orientation([robot_spawning_orientation[0], robot_spawning_orientation[1], robot_spawning_orientation[2]], "spot_robot")
             time.sleep(2)
             # unrealcv_client.read_image(1, "lit", "file_path", landmark_path)
             img = unrealcv_client.read_image(2, "lit", "direct")

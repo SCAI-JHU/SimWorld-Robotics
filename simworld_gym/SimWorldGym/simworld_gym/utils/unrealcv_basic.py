@@ -1,4 +1,3 @@
-import unrealcv
 from unrealcv.util import read_png, read_npy
 import cv2
 import time
@@ -8,6 +7,7 @@ import numpy as np
 import json
 import os
 import ast
+from simworld.communicator.unrealcv import UnrealCV as SimworldUnrealCV
 
 
 def _parse_collision_value(raw):
@@ -22,13 +22,9 @@ def _parse_collision_value(raw):
             return 0.0
 
 
-class UnrealCV(object):
+class UnrealCV(SimworldUnrealCV):
     def __init__(self, port, ip, resolution):
-        self.ip = ip
-        # build a client to connect to the env
-        self.client = unrealcv.Client((ip, port))
-        self.client.connect()
-
+        super().__init__(port, ip)
         self.resolution = resolution
         self.ini_unrealcv(resolution)
 
@@ -72,13 +68,16 @@ class UnrealCV(object):
     def set_location_hard(self, loc, name):
         [x, y, z] = loc
         cmd = f'vset /object/{name}/location {x} {y} {z}'
-        self.client.request(cmd)
+        with self.lock:
+            self.client.request(cmd)
 
-    def custom_set_orientation(self, orientation, name):
+    def set_orientation(self, orientation, name):
+        """Unified method to set orientation (replaces custom_set_orientation)"""
         [roll, pitch, yaw] = orientation
         # unreal's rotation order is pitch, yaw, roll
         cmd = f'vset /object/{name}/rotation {pitch} {yaw} {roll}'
-        self.client.request(cmd)
+        with self.lock:
+            self.client.request(cmd)
 
     def set_scale(self, scale, name):
         [x, y, z] = scale
@@ -114,7 +113,8 @@ class UnrealCV(object):
     def destroy_hard(self, actor_name):
         # print(f"Destroying {actor_name}")
         cmd = f'vset /object/{actor_name}/destroy'
-        self.client.request(cmd)
+        with self.lock:
+            self.client.request(cmd)
 
     def apply_action_transition(self, robot_name, action):
         [speed, duration, direction] = action
@@ -152,12 +152,14 @@ class UnrealCV(object):
         return objects
 
     def get_total_collision(self, name):
-        res = self.client.request(f'vbp {name} GetCollisionNum')
+        cmd = f'vbp {name} GetCollisionNum'
+        with self.lock:
+            res = self.client.request(cmd)
         payload = json.loads(res)
-        human_collision = _parse_collision_value(payload["HumanCollision"])
-        object_collision = _parse_collision_value(payload["ObjectCollision"])
-        building_collision = _parse_collision_value(payload["BuildingCollision"])
-        vehicle_collision = _parse_collision_value(payload["VehicleCollision"])
+        human_collision = _parse_collision_value(payload.get("HumanCollision", 0))
+        object_collision = _parse_collision_value(payload.get("ObjectCollision", 0))
+        building_collision = _parse_collision_value(payload.get("BuildingCollision", 0))
+        vehicle_collision = _parse_collision_value(payload.get("VehicleCollision", 0))
         return human_collision, object_collision, building_collision, vehicle_collision
 
     def get_total_collision_batch(self, actor_names):
@@ -169,10 +171,10 @@ class UnrealCV(object):
         for res in responses:
             payload = json.loads(res)
             collisions.append((
-                _parse_collision_value(payload["HumanCollision"]),
-                _parse_collision_value(payload["ObjectCollision"]),
-                _parse_collision_value(payload["BuildingCollision"]),
-                _parse_collision_value(payload["VehicleCollision"]),
+                _parse_collision_value(payload.get("HumanCollision", 0)),
+                _parse_collision_value(payload.get("ObjectCollision", 0)),
+                _parse_collision_value(payload.get("BuildingCollision", 0)),
+                _parse_collision_value(payload.get("VehicleCollision", 0)),
             ))
         return collisions
 
@@ -184,14 +186,16 @@ class UnrealCV(object):
 
     def get_location_batch(self, actor_names):
         cmd = [f'vget /object/{actor_name}/location' for actor_name in actor_names]
-        res = self.client.request_batch(cmd)
+        with self.lock:
+            res = self.client.request_batch(cmd)
         # Parse each response and convert to numpy array
         locations = [np.array([float(i) for i in r.split()]) for r in res]
         return locations
 
     def get_is_available(self, actor_name):
         cmd = f'vbp {actor_name} CheckAvailable'
-        res = self.client.request(cmd)
+        with self.lock:
+            res = self.client.request(cmd)
         # Parse JSON response and convert to float
         is_available = float(json.loads(res)["IsAvailable"])
         if is_available == 0:
@@ -202,14 +206,13 @@ class UnrealCV(object):
             raise ValueError(f"Failed to get the availability of the actor {actor_name}")
         
     def set_orientation_hard(self, orientation, name):
-        [roll, pitch, yaw] = orientation
-        # unreal's rotation order is pitch, yaw, roll
-        cmd = f'vset /object/{name}/rotation {pitch} {yaw} {roll}'
-        self.client.request(cmd)
+        """Alias for backward compatibility"""
+        self.set_orientation(orientation, name)
         
     def get_available_batch(self, actor_names):
         cmd = [f'vbp {actor_name} CheckAvailable' for actor_name in actor_names]
-        res = self.client.request_batch(cmd)
+        with self.lock:
+            res = self.client.request_batch(cmd)
         # Parse JSON response and convert to float
         return [float(json.loads(r)["IsAvailable"]) > 0 for r in res]
     
@@ -228,7 +231,8 @@ class UnrealCV(object):
 
     def get_cameras(self):
         cmd = "vget /cameras"
-        res = self.client.request(cmd)
+        with self.lock:
+            res = self.client.request(cmd)
         cameras = res.strip().split(" ")
         return cameras
 
@@ -241,7 +245,8 @@ class UnrealCV(object):
 
     def set_fps(self, fps):
         cmd = f'vset /action/set_fixed_frame_rate {fps}'
-        self.client.request(cmd)
+        with self.lock:
+            self.client.request(cmd)
     
     def read_image(self, cam_id, viewmode, mode='direct', img_path=None):
         # cam_id:0 1 2 ...

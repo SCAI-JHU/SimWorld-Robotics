@@ -81,20 +81,11 @@ def build_llm_client(backend: str, model: str):
 # -----------------------------
 def build_paths(setting: int, map_id: str, task_id: int, suffix: str | None) -> Tuple[str, str, str, str, str]:
     """Return map_path, task_path, world_json, agent_json, road_json."""
-    if setting in (1, 2):
-        base_dir = os.path.join("multi_agent_world_new", "multi_agent_world", "20_landmarks")
-        map_path = os.path.join(base_dir, "maps")
-        if setting == 1:
-            task_dir = os.path.join(base_dir, "tasks", f"map_road_20_{map_id}")
-            default_suffix = "1"
-        else:  # setting 2 mirrors the original (map_road_20_1)
-            task_dir = os.path.join(base_dir, "tasks", "map_road_20_1")
-            default_suffix = "0_1"
-    else:  # setting 3 uses the older layout
-        base_dir = os.path.join("multi_agent_world", "multi_agent_task")
-        map_path = os.path.join(base_dir, "maps")
-        task_dir = os.path.join(base_dir, "tasks")
-        default_suffix = "0_1"
+    # All settings now use the same structure as setting 1
+    base_dir = os.path.join("multi_agent_world", "20_landmarks")
+    map_path = os.path.join(base_dir, "maps")
+    task_dir = os.path.join(base_dir, "tasks", f"map_road_20_{map_id}")
+    default_suffix = "1"
 
     sfx = suffix if suffix is not None else default_suffix
     task_path = os.path.join(task_dir, f"task_dist_{task_id}_{sfx}")

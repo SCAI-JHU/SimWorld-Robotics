@@ -5,24 +5,24 @@ from simworld_gym.task_generator.map_utils.config import Config
 
 
 register(
-    id='gym_citynav/SimpleWorld-v0',
-    entry_point='gym_citynav.envs:SimpleEnv',
+    id='simworld_gym/SimpleWorld',
+    entry_point='simworld_gym.envs:SimpleEnv',
     kwargs={
         'action_config': 'action_config.json'
     }
 )
 
 register(
-    id='gym_citynav/BufferWorld-v0',
-    entry_point='gym_citynav.envs:BufferEnv',
+    id='simworld_gym/BufferWorld',
+    entry_point='simworld_gym.envs:BufferEnv',
     kwargs={
         'action_config': 'action_config.json',
         'buffer_max_size': 5}
 )
 
 register(
-    id='gym_citynav/TrafficWorld-v0',
-    entry_point='gym_citynav.envs:TrafficEnv',
+    id='simworld_gym/TrafficWorld',
+    entry_point='simworld_gym.envs:TrafficEnv',
 
 )
 

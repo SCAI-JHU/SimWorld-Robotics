@@ -24,21 +24,61 @@ This repo serves as a benchmark platform for the SimWorld-MMNav and SimWorld-MRS
 
 ### Project Structure
 ```bash
-simworld_gym/ 
-    baseline/           # Baselines used in SimWorld-MMNav and SimWorld-MRS
-    SimWorldGym/
-      config/           # Configuration files for assets and robots
-      envs/             # Gym Environments for SimWorld-MMNav and SimWorld-MRS
-      task_generator/   # Procedural task generation
-      utils/            # Utility functions
-readme.md
+SimWorld-Robotics/
+├── baseline/                     # Baselines for SimWorld-MMNav and SimWorld-MRS
+│   ├── requirements.txt          # Baseline dependencies
+│   ├── single/                   # Single-agent navigation baselines
+│   ├── multi/                    # Multi-agent collaboration baselines
+│   ├── finetune/                 # Fine-tuning scripts
+│   └── vla/                      # Vision-Language-Action models
+├── simworld_gym/                 # Core gym environment package
+│   ├── config/                   # Configuration files for assets and robots
+│   ├── envs/                     # Gym environments
+│   │   ├── simple_world.py       # Single-agent navigation environment
+│   │   ├── traffic_world.py      # Single-agent with traffic
+│   │   ├── world_buffer.py       # Multi-agent environment
+│   │   └── setting/              # Task data (extracted from test_data)
+│   │       ├── single_agent_world/  # Single-agent tasks
+│   │       └── multi_agent_world/   # Multi-agent tasks
+│   ├── task_generator/           # Procedural task generation
+│   └── utils/                    # Utility functions
+├── sample_baseline.ipynb         # Quick start notebook for single-agent navigation
+├── video_record.ipynb            # Video recording utility
+└── readme.md                     # Me
 ```
 
-## Setup
-Before installing **SimWorld-Robotics**, install the main library [SimWorld]((https://github.com/SimWorld-AI/SimWorld)) first.
+## 🚀 Setup
+
+### Installation
+
+1. **Clone the repository**
 ```bash
-git clone git@github.com:SCAI-JHU/CityGym.git
-cd simworld_gym
-cd SimWorldGym
-pip install -e .
+git clone git@github.com:SCAI-JHU/SimWorld-Robotics.git
+cd SimWorld-Robotics
 ```
+
+2. **Install the core gym environment**
+```bash
+cd simworld_gym
+pip install -e .
+cd ..
+```
+
+3. **Install baseline dependencies**
+```bash
+pip install -r baseline/requirements.txt
+```
+
+4. **Download and Extract test data**
+
+- Extract `single_test.tar.gz` to `simworld_gym/envs/setting/single_agent_world/`
+- Extract `multi_test.tar.gz` to `simworld_gym/envs/setting/multi_agent_world/`
+
+### Quick Start with Sample Baseline
+
+Try out a single-agent navigation task using the interactive notebook: `sample_baseline.ipynb`
+
+This notebook demonstrates:
+- Loading a sample navigation task
+- Running a vision-language model agent
+- Visualizing navigation results
