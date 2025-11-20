@@ -71,8 +71,8 @@ pip install -r baseline/requirements.txt
 
 4. **Download and Extract test data**
 
-- Extract `single_test.tar.gz` to `simworld_gym/envs/setting/single_agent_world/`
-- Extract `multi_test.tar.gz` to `simworld_gym/envs/setting/multi_agent_world/`
+- Extract [`single_test.tar.gz`](https://huggingface.co/datasets/jise/simworld-20k/resolve/main/test_settings/single_test.tar.gz) to `simworld_gym/envs/setting/single_agent_world/`
+- Extract [`multi_test.tar.gz`](https://huggingface.co/datasets/jise/simworld-20k/resolve/main/test_settings/multi_test.tar.gz) to `simworld_gym/envs/setting/multi_agent_world/`
 
 ### Quick Start with Sample Baseline
 
