@@ -45,7 +45,7 @@ class EnvironmentGenerator(object):
                 pass
             else:
                 self.unrealcv.spawn_bp_asset(instance_ref, id)
-                # self.unrealcv.set_color(id, rgb_values)
+                self.unrealcv.set_color(id, rgb_values)
                 location = self.node_df.loc[id, ['properties_location_x', 'properties_location_y', 'properties_location_z']].to_list()
                 self.unrealcv.set_location(location, id)
                 orientation = self.node_df.loc[id, ['properties_orientation_roll', 'properties_orientation_pitch', 'properties_orientation_yaw']].to_list()
