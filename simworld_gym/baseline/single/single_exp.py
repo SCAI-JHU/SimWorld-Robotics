@@ -17,7 +17,7 @@ parser.add_argument("--backend", type=str, default="openai", help="Backend for t
 parser.add_argument("--model", type=str, default="gpt-4o", help="Model name.")
 parser.add_argument("--ip", type=str, default="127.0.0.1")
 parser.add_argument("--reasoning", action="store_true", help="Use ReasoningAgent (single-step plan) instead of ReAct.")
-parser.add_argument("--setting", type=str, choices=["simple", "traffic"], default="simple", help="Task setting: simple or traffic.")
+parser.add_argument("--setting", type=str, choices=["simple", "hard"], default="simple", help="Task setting: simple or traffic.")
 parser.add_argument("--strip", action="store_true", help="Use strip mode for perception.")
 parser.add_argument("--depth", action="store_true", help="Use depth mode for perception.")
 parser.add_argument("--segment", action="store_true", help="Use segmentation mode for perception.")
@@ -84,7 +84,7 @@ input_tokens = 0
 output_tokens = 0
 
 for task in task_2_test:
-    task_path = os.path.join("single_agent_world", "easy", f"map_road_{map}", task)
+    task_path = os.path.join("single_agent_world", setting, f"map_road_{map}", task)
     world_json = os.path.join(task_path, "progen_world.json")
     agent_json = os.path.join(task_path, "task_config.json")
     if not initialized:
