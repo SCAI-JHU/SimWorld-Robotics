@@ -6,8 +6,7 @@ with UnrealCV and an optional Jupyter Notebook interface.
 It is designed for GPU-accelerated, headless execution using NVIDIA Docker runtime on Linux.
 
 ------------------------------------------------------------
-1. System Requirements
-------------------------------------------------------------
+## 1. System Requirements
 
 Hardware:
 - NVIDIA GPU with Vulkan support
@@ -24,8 +23,7 @@ The default base image is:
 This can be changed in the Dockerfile if a different CUDA or OS version is required.
 
 ------------------------------------------------------------
-2. Directory Layout
-------------------------------------------------------------
+## 2. Directory Layout
 
 Place the following files at the same level as SimWorldGym:
 
@@ -53,8 +51,7 @@ After building the image, download and unzip the SimWorld Linux runtime from [Si
 We support both the [base](https://simworld-release.s3.us-east-1.amazonaws.com/SimWorld-Linux-v0_1_0-Foundation.zip) package and the [100-Map](https://simworld-release.s3.us-east-1.amazonaws.com/SimWorld-Linux-v0_1_0-100Maps.zip) version.
 
 ------------------------------------------------------------
-3. Run the Container
-------------------------------------------------------------
+## 3. Run the Container
 
 General command template:
 
@@ -95,8 +92,7 @@ Optional:
   Only supported by the 100Map build.
 
 ------------------------------------------------------------
-4. Notes and Best Practices
-------------------------------------------------------------
+## 4. Notes and Best Practices
 
 - Always use --runtime=nvidia for Vulkan stability
 - Large assets and maps should be mounted, not baked into the image
