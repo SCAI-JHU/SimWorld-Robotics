@@ -10,7 +10,7 @@ ENV VK_INSTANCE_LAYERS=""
 ENV UE_PORT=9000
 ENV JUPYTER_PORT=8888
 ENV DISPLAY=:99
-ENV WORKDIR=/SimWorldGym
+ENV WORKDIR=/workspace
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     python3 python3-pip python3-venv \
