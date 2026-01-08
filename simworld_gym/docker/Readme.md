@@ -55,6 +55,7 @@ We support both the [base](https://simworld-release.s3.us-east-1.amazonaws.com/S
 
 General command template:
 
+```
 docker run --rm -it \
   --gpus all \
   --runtime=nvidia \
@@ -69,24 +70,25 @@ docker run --rm -it \
   -e UE_MAP=<Map_URL> \
   -e WORKDIR=/workspace \
   simworld-jupyter:latest
+```
 
 Required:
-- UE_PORT
+- `UE_PORT`
   Port used by UnrealCV (must match -p mapping)
 
-- JUPYTER_PORT
+- `JUPYTER_PORT`
   Port for Jupyter Notebook
 
-- DISPLAY
-  Xvfb display number (e.g. :88), choose randomly but avoid conflict
+- `DISPLAY`
+  Xvfb display port (e.g. :88), choose randomly while avoiding conflict
 
-- -v <workspace_dir>:/workspace:rw
+- `-v <workspace_dir>:/workspace:rw`
   Controls where logs and code are written.
 
 Optional:
-- -e UE_MAP
+- `-e UE_MAP`
   Example:
-  /Game/TokyoStylizedEnvironment/Maps/Tokyo.umap
+  `/Game/TokyoStylizedEnvironment/Maps/Tokyo.umap`
   
   If not provided, the default map is used.
   Only supported by the 100Map build.
