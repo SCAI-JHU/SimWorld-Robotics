@@ -1,0 +1,105 @@
+# -------------------------
+# Git / version control
+# -------------------------
+.git
+.gitignore
+.gitmodules
+.github/
+
+# -------------------------
+# Python
+# -------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+dist/
+build/
+pip-wheel-metadata/
+
+# Virtual envs
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb~
+
+# -------------------------
+# Logs / runtime outputs
+# -------------------------
+*.log
+logs/
+log/
+*.out
+*.err
+nohup.out
+core.*
+*.core
+
+# -------------------------
+# OS / editor junk
+# -------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.code-workspace
+
+# -------------------------
+# Unreal Engine (CRITICAL)
+# -------------------------
+Saved/
+DerivedDataCache/
+Intermediate/
+Binaries/
+.vs/
+*.sln
+*.opensdf
+*.sdf
+*.suo
+
+# Unreal crash dumps
+CrashReportClient/
+*.dmp
+
+# -------------------------
+# Large assets / datasets (mount instead)
+# -------------------------
+*.pak
+*.utoc
+*.ucas
+Content/**
+!Content/Config/**
+
+# If you mount maps/models at runtime
+Maps/**
+Assets/**
+Datasets/**
+Data/**
+.cache/
+
+# -------------------------
+# Docker / build artifacts
+# -------------------------
+Dockerfile
+docker-compose.yml
+*.tar
+*.tar.gz
+*.zip
+*.7z
+
+# -------------------------
+# Cluster / Slurm
+# -------------------------
+slurm-*.out
+slurm-*.err
+*.sbatch
