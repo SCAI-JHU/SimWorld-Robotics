@@ -98,7 +98,7 @@ Optional:
 
 - Always use --runtime=nvidia for Vulkan stability
 - Large assets and maps should be mounted, not baked into the image
-- Check vulkaninfo by running `!vulkaninfo` in a single cell if connection fails, sometimes changing DISPLAY might help
+- Check vulkaninfo by running `!vulkaninfo --summary` in a single cell if connection fails, sometimes changing DISPLAY might help
 - Inside the container, Unreal logs can be found at `/workspace/unreal.log`
 
 The environment is now ready for reproducible SimWorld experiments.
