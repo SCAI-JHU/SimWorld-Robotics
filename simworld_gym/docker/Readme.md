@@ -1,7 +1,7 @@
 
 # SimWorldGym Docker (Unreal Engine + UnrealCV + Jupyter)
 
-This repository provides a Docker-based runtime for running SimWorld (UE 5.3)
+This repository provides a Docker-based runtime for running SimWorld (built with UE 5.3)
 with UnrealCV and an optional Jupyter Notebook interface.
 It is designed for GPU-accelerated, headless execution using NVIDIA Docker runtime on Linux.
 
