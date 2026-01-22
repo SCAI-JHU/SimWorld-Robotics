@@ -2,9 +2,11 @@
 <p align="center">
   <a href="https://scai.cs.jhu.edu/projects/SimWorldRobotics/">
     <img src="https://img.shields.io/badge/Website-SimWorld--Robotics-blue"/>
-  </a><a href="https://arxiv.org/pdf/2512.10046">
+  </a>
+   <a href="https://arxiv.org/pdf/2512.10046">
     <img src="https://img.shields.io/badge/Paper-arXiv-red"/>
-  </a><a href="https://huggingface.co/datasets/jise/simworld-20k">
+  </a>
+   <a href="https://huggingface.co/datasets/jise/simworld-20k">
     <img src="https://img.shields.io/badge/Dataset-HuggingFace-yellow"/>
   </a>
 </p>
